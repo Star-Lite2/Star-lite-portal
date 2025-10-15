@@ -1,0 +1,33 @@
+https://unpkg.com/ionicons@5.4.0/dist/inoicons.js
+
+ <form>
+        <h1>Fill in the form</h1>
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="Name" required class="Lite"><br>
+        
+
+<label for="email">Email:</label><br>
+<input type="email" name="email" id="email" required class="Lite"> <br>
+
+<label for="sex"> Gender:</label><br>
+<select required>
+    <option></option>
+    <option value="male">Male</option>
+    <option value="femal">Female</option>
+    <option value="others">Others</option><br>
+</select> <br>
+
+<label for="password">Password:</label><br>
+<input type="password" required class="Lite"> <br>
+
+<label for="password">Confirm Password:</label><br>
+<input type="password" required class="Lite"><br><br>
+
+<button>Submit</button> <br><br>
+
+<p><i>by clicking this box <input type="checkbox" required> i have read and agree to the <a href="terms.html">Terms & Condition.</a></p>
+
+
+</form>
+</body>
+</html>

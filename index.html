@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star_Lite Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .btn-glow:hover {
+            box-shadow: 0 0 15px rgba(118, 75, 162, 0.7);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <div id="vanta-globe" class="absolute w-full h-full"></div>
+    
+    <div class="relative z-10">
+        <!-- Navigation -->
+        <nav class="px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <i data-feather="zap" class="text-purple-600 mr-2"></i>
+                <span class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500">Star_Lite</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-700 hover:text-purple-600 transition">Home</a>
+                <a href="#" class="text-gray-700 hover:text-purple-600 transition">Features</a>
+                <a href="#" class="text-gray-700 hover:text-purple-600 transition">About</a>
+                <a href="#" class="text-gray-700 hover:text-purple-600 transition">Contact</a>
+            </div>
+            <button class="md:hidden">
+                <i data-feather="menu"></i>
+            </button>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="container mx-auto px-6 py-24 md:py-32 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 text-gray-800 leading-tight">
+                Welcome to the 
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500">Future</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-10">
+                Star_Lite Portal is your gateway to innovative digital experiences. We blend technology with creativity to build extraordinary web solutions.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <button class="px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-full font-medium transition transform hover:scale-105 btn-glow">
+                    Get Started
+                </button>
+                <button class="px-8 py-3 border border-purple-600 text-purple-600 rounded-full font-medium transition hover:bg-purple-50">
+                    Learn More
+                </button>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="w-12 h-12 flex items-center justify-center bg-purple-100 rounded-lg mb-4">
+                        <i data-feather="box" class="text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Modular Design</h3>
+                    <p class="text-gray-600">Customizable components that adapt to your needs.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-lg mb-4">
+                        <i data-feather="bolt" class="text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Lightning Fast</h3>
+                    <p class="text-gray-600">Optimized performance for seamless user experiences.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="w-12 h-12 flex items-center justify-center bg-pink-100 rounded-lg mb-4">
+                        <i data-feather="feather" class="text-pink-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Intuitive UX</h3>
+                    <p class="text-gray-600">Beautiful interfaces that users love to interact with.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-12 mt-20">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between">
+                    <div class="mb-8 md:mb-0">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="zap" class="text-purple-400 mr-2"></i>
+                            <span class="text-xl font-bold">Star_Lite</span>
+                        </div>
+                        <p class="text-gray-400 max-w-md">Crafting digital experiences that inspire and engage.</p>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                        <div>
+                            <h4 class="font-bold mb-4">Product</h4>
+                            <ul class="space-y-2 text-gray-400">
+                                <li><a href="#" class="hover:text-white transition">Features</a></li>
+                                <li><a href="#" class="hover:text-white transition">Pricing</a></li>
+                                <li><a href="#" class="hover:text-white transition">Demo</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-4">Company</h4>
+                            <ul class="space-y-2 text-gray-400">
+                                <li><a href="#" class="hover:text-white transition">About</a></li>
+                                <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                                <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-4">Connect</h4>
+                            <ul class="space-y-2 text-gray-400">
+                                <li><a href="#" class="hover:text-white transition">Twitter</a></li>
+                                <li><a href="#" class="hover:text-white transition">LinkedIn</a></li>
+                                <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                    <p>© 2025 Star_Lite. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Initialize Vanta.js globe
+        VANTA.GLOBE({
+            el: "#vanta-globe",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x7c3aed,
+            backgroundColor: 0xf8fafc
+        });
+
+        // Initialize feather icons
+        feather.replace();
+    </script>
+</body>
+</html>
